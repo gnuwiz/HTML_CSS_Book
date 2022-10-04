@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		div {
+			width: 150px; /* 기존 width 150px */
+			height: 100px; /* 기존 height 100px */
+			background: red;
+			transition: width 1s, height 3s;
+			/* -webkit- 벤더 프리픽스 사용 */
+			-webkit-transition: width 1s, height 3s;
+		}
+
+		/* 마우스 호버했을 때 width 300px, height 500px로 변함 */
+		div:hover {
+			width: 300px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div>width 150px에서 300px,height 100px에서 500px</div>
+</body>
+</html>
