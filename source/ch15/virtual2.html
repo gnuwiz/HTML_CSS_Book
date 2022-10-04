@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		.menu li {
+			display: inline-block;
+			margin-left: 20px;
+			list-style: none;
+		}
+		.menu li::before {
+			content: "|";
+			padding-right: 10px;
+		}
+		.menu li:first-child::before {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="gnb">
+		<ul class="menu">
+			<li><a href="#">menu01</a></li>
+			<li><a href="#">menu02</a></li>
+			<li><a href="#">menu03</a></li>
+		</ul>
+	</div>
+</body>
+</html>
