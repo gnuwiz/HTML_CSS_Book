@@ -1,0 +1,225 @@
+/* 공통 */
+html, body {
+	height: 100%; /* 높이 100% */
+	overflow-y: hidden; /* y축 스크롤 숨기기 */
+}
+
+/* 버튼 */
+.btn:after {
+	content: ""; /* 선택한 요소 뒤에 콘텐츠 삽입 */
+	display: inline-block; /* 블록 요소를 인라인-블록요소로 변경 */
+	margin-left: 12px; /* 바깥 왼쪽 여백 12px */
+	width: 38px; /* 너비 38px */
+	height: 38px; /* 높이 38px */
+	transition: all 0.3s; /* 모든 속성이 0.3초 동안 전환 */
+}
+
+/* 전체 콘텐츠 영역 */
+#wrapper {
+	width: 9723px; /* 너비 9723px */
+	height: 100vh; /* 높이 100vh = 디바이스 높이 100% */
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+}
+
+#wrapper > section {
+	height: 100vh; /* 높이 100vh = 디바이스 높이 100% */
+	position: relative; /* 자기자신을 기준점 */
+}
+
+/* 콘텐츠 영역① */
+#section01 {
+	width: 100vw; /* 너비 100vw = 디바이스 너비 100% */
+	background: url("../images/section01/bg.jpg") no-repeat; /* 배경 지정 */
+	background-size: cover; /* 배경 크기 지정 */
+}
+
+#section01 .wrap {
+	width: 1770px; /* 너비 1770px */
+	/* calc()는 괄호 안의 식을 계산한 결과를 속성값으로 사용하게 해주는 속성 */
+	height: calc(100vh - 140px); /* 높이 100vh - 140px  */
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	left: 50%; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translate(-50%,-50%); /* transform: translate(X,Y); */
+}
+
+/* 콘텐츠 영역①-1 */
+#section01 .text_container {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	left: 0; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY ;*/
+}
+
+#section01 .title {
+	margin-bottom: 60px; /* 바깥 아래 여백 60px */
+}
+
+#section01 .text {
+	margin-bottom: 60px; /* 바깥 아래 여백 60px */
+}
+
+/* 마우스 올리기 전 */
+#section01 .btn:after {
+	background: url("../images/section01/btn_arrow_off.png") no-repeat; /* 배경 지정 */
+	background-size: cover; /* 배경 크기 지정 */
+}
+
+/* 마우스 올리기 후 */
+#section01 .btn:hover:after {
+	background: url("../images/section01/btn_arrow_on.png") no-repeat; /* 배경 지정 */
+}
+
+/* 콘텐츠 영역①-2 */
+#section01 .sns {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	bottom: 0; /* 하단 좌표값 */
+	left: 0; /* 좌측 좌표값 */
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+}
+
+#section01 .sns > li {
+	margin-right: 60px; /* 바깥 오른쪽 여백 12px */
+}
+
+/* 콘텐츠 영역② */
+#section02 {
+	width: 3853px; /* 너비 3853px */
+}
+
+#section02 > div {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+}
+
+/* 콘텐츠 영역②-1 */
+#section02 .title {
+	left: 217px; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY ;*/
+}
+
+/* 콘텐츠 영역②-2 */
+#section02 .img {
+	left: 1265px; /* 좌측 좌표값 */
+	top: 0; /* 상단 좌표값 */
+	z-index: -100; /* 요소의 순서를 제어하는 속성 */
+}
+
+/* 콘텐츠 영역②-3 */
+#section02 .text {
+	right: 830px; /* 우측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY ;*/
+}
+
+/* 마우스 올리기 전 */
+#section02 .btn:after {
+	background: url("../images/section02/btn_arrow_off.png") no-repeat; /* 배경 지정 */
+	background-size: cover; /* 배경 크기 지정 */
+}
+
+/* 마우스 올리기 후 */
+#section02 .btn:hover:after {
+	background: url("../images/section02/btn_arrow_on.png") no-repeat; /* 배경 지정 */
+}
+
+/* 콘텐츠 영역③ */
+#section03 {
+	width: 1378px; /* 너비 1378px */
+	background: #222; /* 배경색지정 */
+}
+
+#section03 > div {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+}
+
+/* 콘텐츠 영역③-1 */
+#section03 .img {
+	left: -517px; /* 좌측 좌표값 */
+	bottom: 0; /* 하단 좌표값 */
+}
+
+/* 콘텐츠 영역③-2 */
+#section03 .text {
+	left: 617px; /* 좌측 좌표값 */
+	top: 240px; /* 상단 좌표값 */
+}
+
+#section03 .text03 {
+	margin-bottom: 80px; /* 바깥 아래 여백 80px */
+}
+
+/* 마우스 올리기 전 */
+#section03 .btn:after {
+	background: url("../images/section03/btn_arrow_off.png") no-repeat; /* 배경 지정 */
+	background-size: cover; /* 배경 크기 지정 */
+}
+
+/* 마우스 올리기 후 */
+#section03 .btn:hover:after {
+	background: url("../images/section03/btn_arrow_on.png") no-repeat; /* 배경 지정 */
+} 
+
+/* 콘텐츠 영역④ */
+#section04 {
+	width: 2571px; /* 너비 2571px */
+}
+
+#section04 .wrap {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY ;*/
+	display: flex; /*  flex container(부모 요소)에 display: flex; 선언 */
+}
+
+/* 콘텐츠 영역④-1 */
+#section04 .menu {
+	padding: 0 310px; /* 상하 내부 여백 0px 좌우 내부 여백 310px */
+	display: flex; /*  flex container(부모 요소)에 display: flex; 선언 */
+}
+
+#section04 .menu > li {
+	position: relative; /* 자기자신을 기준점 */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+	width: 274px; /* 너비 274px */
+	height: 441px; /* 높이 441px */
+	cursor: pointer; /* 커서 손모양으로 변경*/
+}
+
+/* #section04 .menu li 자식 중 두 번째 자식 선택 */
+#section04 .menu > li:nth-of-type(2) {
+	margin: 0 157px; /* 좌우 바깥 여백 157px 블록 요소 가운데 정렬 */
+}
+
+#section04 .menu > li > div {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+}
+
+#section04 .menu .text {
+	width: 333px; /* 너비 333px */
+	height: 72px; /* 높이 72px */
+	left: 50%; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translate(-50%, -50%); /* transform: translate(X,Y); */
+	z-index: 100; /* 요소의 순서를 제어하는 속성 */
+}
+
+#section04 .menu > li .img {
+	opacity: 0; /* 투명도 0 */
+	transition: all 0.5s; /* 모든 속성이 0.5초 동안 전환 */
+}
+
+#section04 .menu > li:hover .img {
+	opacity: 1; /* 투명도 1 */
+}
+
+/* 푸터 영역 */
+#section04 .footer {
+	position: relative; /* 자기자신을 기준점 */
+}
+
+#section04 .footer > img {
+	position:absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY ;*/
+}
