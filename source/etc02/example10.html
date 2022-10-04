@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		/* fadeIn 애니메이션 정의 */
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
+		div {
+			width: 300px;
+			height: 300px;
+			background: red;
+			/* 움직임을 줄 요소에 사용하는 애니메이션 이름 = 
+			@keyframes에서 정의한 애니메이션 이름 fadeIn  */
+			animation-name: fadeIn; 
+			animation-duration: 2s;
+		}
+	</style>
+</head>
+<body>
+	<div>opacity 0에서 1</div>
+</body>
+</html>

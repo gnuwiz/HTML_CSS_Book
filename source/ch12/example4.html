@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		/* position 속성의 기본 값 static left, bottom 좌표 값 적용 */
+		.static {
+			width: 200px;
+			height: 200px;
+			background: red;
+			position: static; 
+			left: 50px; 
+			bottom: 20px;
+		}
+		
+		/* position 속성 값 relative left, bottom 좌표 값 적용 */
+		.relative {
+			width: 200px;
+			height: 200px;
+			background: blue;
+			position: relative; 
+			left: 50px; 
+			bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="static">static</div>
+	<div class="relative">relative</div>
+</body>
+</html>

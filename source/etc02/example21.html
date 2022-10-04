@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		/* transform 속성을 가진 transform 애니메이션 이름을 가진 키프레임 정의 */
+		@keyframes transform {
+			to {
+				transform: scale(1.5) rotate(140deg);
+			}
+		}
+		
+		.gnuwiz {
+			width: 300px;
+			height: 300px;
+			background: green;
+			margin: 200px auto;
+			animation: transform 2s; /* 애니메이션 시간 설정 */
+		}
+	</style>
+</head>
+<body>
+	<div class="gnuwiz"></div>
+</body>
+</html>

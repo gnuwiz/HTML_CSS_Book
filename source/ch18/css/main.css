@@ -1,0 +1,215 @@
+/* 공통 */
+html, body {
+	height: 100%; /* 높이 100% */
+	overflow-x: hidden; /* x축 스크롤 숨기기 */
+}
+
+/* 타이틀 영역 */
+.title01 {
+	font-size: 42px; /* 폰트 사이즈 42px */
+	font-weight: 700; /* 폰트 두께 700 */
+	color: #fff; /* 폰트 색상 #fff */
+	text-align: center; /* 텍스트 중앙 정렬 */
+	margin-bottom: 25px; /* 바깥 아래 여백 25px */
+}
+
+/* 텍스트 영역 */
+.text01 {
+	color: #fff; /* 폰트 색상 #fff */
+	text-align: center; /* 텍스트 중앙 정렬 */
+	margin-bottom: 40px; /* 바깥 아래 여백 40px */
+}
+
+/* 헤더 영역 */
+header {
+	font-size: 0; /* 인라인 혹은 인라인-블록요소 속성으로 인한 공백 없애기 */
+	position: fixed; /* 브라우저를 기준점으로 고정된 상태 */
+	left: 0; /* 좌측 좌표값 */
+	top: 0; /* 상단 좌표값 */
+	z-index: 100; /* 요소의 순서를 제어하는 속성 */
+}
+
+/* 콘텐츠 영역① 버튼 영역*/
+/* .btn에 마우스 올리기 전 */
+.btn {
+	display: inline-block; /* 블록 요소를 인라인-블록요소로 변경 */
+	width: 130px; /* 너비 130px */
+	height: 50px; /* 높이 50px */
+	color: #666; /* 폰트 색상 #666 */
+	line-height: 50px; /* 인라인 요소 세로 중앙 정렬 */
+	text-align: center; /* 텍스트 중앙 정렬 */
+	border: 1px solid #ddd; /* 라인 1px 실선 #ddd */
+	margin: 0 auto; /* 블록 요소 가운데 정렬 */
+}
+
+/* .btn에 마우스 올리기 후 */
+.btn:hover {
+	background: #fff; /* 배경색 #fff */
+	color: #222; /* 폰트 색상 #222 */
+	border: 1px solid #fff; /* 라인 1px 실선 #ddd */
+	transition: all .5s; /* 모든 속성이 0.5초 동안 전환 */
+}
+
+/* 전체 콘텐츠 영역 */
+#wrapper {
+	height: 100%; /* 높이 100% */
+}
+
+#wrapper > section {
+	height: 100%; /* 높이 100% */
+	position: relative; /* 자기자신을 기준점 */
+}
+
+#wrapper > section .wrap {
+	width: 1100px; /* 너비 1100px */
+	position: absolute; /* 부모(상위)를 기준점으로 고정된 상태 */
+	left: 50%; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translate(-50%,-50%); /* transform :  translate(X,Y); */
+	/* background: #000; */ /* 배경색 : 영역확인용 */
+	/* height: 100%; */ /* 높이 : 영역확인용 */
+}
+
+/* 콘텐츠 영역① */
+#section01 {
+	background: url("../images/section01/bg.jpg") no-repeat; /*배경 지정*/
+}
+
+/* 콘텐츠 영역① 타이틀 영역*/
+#section01 .title01 {
+	font-size: 50px; /* 폰트 사이즈 50px */
+	margin-bottom: 75px; /* 바깥 아래 여백 75px */
+}
+
+/* 콘텐츠 영역② */
+#section02 {
+	background: url("../images/section02/bg.jpg") no-repeat; /* 배경 지정 */
+}
+
+/* 콘텐츠 영역②-1 */
+#section02 .news {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	justify-content: space-between;
+	/* flex container(부모 요소)에 justify-content정렬 방식 설정 */
+	/* space-between 좌우 여백 없이 사이 여백 균등하게 배치 */
+	padding-top: 30px; /* 안쪽 상단 여백 30px */
+	margin-bottom: 60px; /* 바깥 아래 여백 60px */
+	border-top: 1px solid #737373; /* 상단 라인 1px 실선 #7373 */
+}
+
+#section02 .wrap > button {
+	background:transparent; /* 기본 배경색 초기화 */
+	position: absolute; /* 부모(상위)를 기준점으로 고정된 상태 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform : translateY */
+}
+
+#section02 .wrap .prev {
+	left: -75px; /* 좌측 좌표값 */
+}
+
+#section02 .wrap .next {
+	right: -75px; /* 우측 좌표값 */
+}
+
+/* 콘텐츠 영역②-2 */
+#section02 .sns {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	justify-content: space-between;
+	/* flex container(부모 요소)에 justify-content정렬 방식 설정 */
+	/* space-between 좌우 여백 없이 사이 여백 균등하게 배치 */
+}
+
+#section02 .sns > li {
+	background: #3f4043; /* 배경색 #3f4043 */
+	width: 265px; /* 너비 265px */
+	height: 66px; /* 높이 66px */
+}
+
+/* 마우스 올리기 전 */
+#section02 .sns > li > a { 
+	display: inline-block; /* 블록 요소를 인라인-블록요소로 변경 */
+	width: 100%; /* 너비 100% */
+	height: 100%; /* 높이 100% */
+	font-size: 18px; /* 폰트 사이즈 18px */
+	color: #fff; /* 폰트 색상 #fff */
+	line-height: 66px; /* 인라인 요소 세로 중앙 정렬 */
+	text-align: center; /* 텍스트 중앙 정렬 */
+	transition: all .5s; /* 모든 속성이 0.5초 동안 전환 */
+}
+
+/* 마우스 올리기 후 */
+#section02 .sns .blog > a:hover { 
+	background: #19CE60;
+}
+
+#section02 .sns .youtube > a:hover { 
+	background: #FF0000;
+}
+
+#section02 .sns .facebook > a:hover { 
+	background: #1877F2;
+}
+
+#section02 .sns .instagram > a:hover { 
+	background: #6428C5;
+}
+
+/* 콘텐츠 영역③ */
+#section03 {
+	background: url("../images/section03/bg.jpg") no-repeat; /*배경 지정*/
+}
+
+#section03 .products {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+}
+
+#section03 .products > li {
+	font-size: 0; /* 인라인 혹은 인라인-블록요소 속성으로 인한 공백 없애기 */
+	border-right: 1px solid #ddd; /* 오른쪽 라인 1px 실선 #ddd */
+}
+
+/* #section03 .products li 자식 중 마지막 자식 선택 */
+#section03 .products > li:last-child {
+	border-right: none; /* 오른쪽 라인 없음 */
+}
+
+/* 콘텐츠 영역④ */
+#section04 {
+	background: url("../images/section04/bg.jpg") no-repeat; /*배경 지정*/
+}
+
+#section04 .box {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+}
+
+#section04 .content {
+	padding: 70px 60px; /* 상하 내부 여백 70px 좌우 내부 여백 60px */
+	background: #fff; /* 배경색 #fff */
+}
+
+#section04 .content .title02 {
+	font-size: 30px; /* 폰트 사이즈 50px */
+	font-weight: 700; /* 폰트 두께 700 */
+	line-height: 1.25; /* 문장과 문장 사이의 간격 */
+	margin-bottom: 15px; /* 바깥 아래 여백 7=15px */
+}
+
+#section04 .content .text02 {
+	color: #666; /* 폰트 색상 #666 */
+	margin-bottom: 30px; /* 바깥 아래 여백 30px */
+}
+
+/* 콘텐츠 영역⑤ */
+#section05 {
+	background: url("../images/section05/bg.jpg") no-repeat; /*배경 지정*/
+}
+
+#section05 .community {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+}
+
+/* 푸터 영역 */
+footer {
+	font-size: 0; /* 인라인 혹은 인라인-블록요소 속성으로 인한 공백 없애기 */
+}

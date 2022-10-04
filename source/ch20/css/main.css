@@ -1,0 +1,283 @@
+/* 공통 */
+html, body {
+	overflow-x: hidden; /* x축 스크롤 숨기기 */
+}
+
+.mob {
+	display: none; /* 1920px ~ 1600px까지 보이지 않도록 지정 */
+}
+
+.section > .wrap {
+	width: 90%; /* 너비 90% */
+	height: 100%; /* 높이 100% */
+	margin: 0 auto; /* 블록 요소 가운데 정렬 */
+	position: relative; /* 자기자신을 기준점 */
+}
+
+/* 버튼 */
+.btn {
+	width: 125px; /* 너비 125px */
+	height: 44px; /* 높이 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+	position: relative; /* 자기자신을 기준점 */
+}
+
+.btn > div {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	left: 0; /* 좌측 좌표값 */
+	top: 0; /* 상단 좌표값 */
+	transition: all .5s; /* 모든 속성이 0.5초 동안 전환 */
+}
+
+/* 마우스 올리기 전 */
+.btn .on {
+	opacity: 0; /* 투명도 0 */
+}
+
+/* 마우스 올리기 후 */
+.btn:hover .off {
+	opacity: 0; /* 투명도 0 */
+}
+
+.btn:hover .on {
+	opacity: 1; /* 투명도 1 */
+}
+
+/* 헤더 영역 */
+header img {
+	width: 100%; /* 너비 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+}
+
+/* 콘텐츠 영역① */
+#section01 {
+	height: 852px; /* 높이 85px */
+	background: url("../images/section01/bg.jpg") no-repeat; /* 배경 지정 */
+	background-size: cover; /* 배경 크기 지정 */
+	margin-bottom: 112px; /* 바깥 아래 여백 112px */
+}
+
+#section01 .text_container {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	left: 0; /* 좌측 좌표값 */
+	bottom: 116px; /* 하단 좌표값 */
+}
+
+#section01 .text {
+	margin-bottom: 30px; /* 바깥 아래 여백 30px */
+}
+
+/* 콘텐츠 영역② */
+#section02 .top {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	justify-content: space-between;
+	/* flex container(부모 요소)에 justify-content정렬 방식 설정 */
+	/* space-between 좌우 여백 없이 사이 여백 균등하게 배치 */
+	margin-bottom: 20px; /* 바깥 아래 여백 20px */
+}
+
+#section02 .img_container {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	margin-bottom: 100px; /* 바깥 아래 여백 100px */
+}
+
+#section02 .img_container > div {
+	margin-right: 76px; /* 바깥 우측 여백 76px */
+}
+
+/* 콘텐츠 영역③ */
+#section03 {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	margin-bottom: 226px; /* 바깥 아래 여백 226px */
+}
+
+#section03 .left > img {
+	width: 100%; /* 너비 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+}
+
+#section03 .right {
+	position: relative; /* 자기자신을 기준점 */
+}
+
+#section03 .right .text_container {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	left: 150px; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY; */
+}
+
+#section03 .right .text {
+	margin-bottom: 20px; /* 바깥 아래 여백 20px */
+}
+
+/* 콘텐츠 영역④ */
+#section04 .title {
+	margin-bottom: 20px; /* 바깥 아래 여백 20px */
+}
+
+#section04 .img_container {
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	justify-content: space-between;
+	/* flex container(부모 요소)에 justify-content정렬 방식 설정 */
+	/* space-between 좌우 여백 없이 사이 여백 균등하게 배치 */
+	flex-wrap: wrap; /* flex item(자식 요소)을 줄바꿈 설정 */
+}
+
+#section04 .img_container > div {
+	margin-bottom: 100px; /* 바깥 아래 여백 100px */
+}
+
+#section04 .img_container img {
+	width: 100%; /* 너비 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+}
+
+/* 콘텐츠 영역⑤ */
+#section05 {
+	padding: 115px 0; /* 안쪽 좌우 여백 115px */
+	background: #efefef; /* 배경색 지정 */
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+}
+
+#section05 .left > img {
+	width: 100%; /* 너비 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+}
+
+#section05 .right {
+	position: relative; /* 자기자신을 기준점 */
+}
+
+#section05 .right .text_container {
+	position: absolute; /* 부모(상위)를 기준점으로 배치된 상태 */
+	left: 150px; /* 좌측 좌표값 */
+	top: 50%; /* 상단 좌표값 */
+	transform: translateY(-50%); /* transform: translateY; */
+}
+
+#section05 .right .text {
+	margin-bottom: 20px; /* 바깥 아래 여백 20px */
+}
+
+/* 푸터영역 */
+footer img {
+	width: 100%; /* 너비 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+}
+
+
+/* desktop */
+@media screen and (max-width: 1600px) {
+	/* 콘텐츠 영역③ */
+	#section03 > div {
+		width: 50%; /* 너비 50% */
+	}
+
+	/* 콘텐츠 영역④ */
+	#section04 .img_container .pc {
+		width: 46%; /* 너비 46% */
+	}
+
+	/* 콘텐츠 영역⑤ */
+	#section05 > div {
+		width: 50%; /* 너비 50% */
+	}
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+	/* 공통 */
+	.pc { 
+		display: none; /* 480px부터 보이지 않도록 지정 */
+	}
+
+	.mob {
+		display: block; /* 480px부터 보이도록 지정 */
+	}
+
+	.section > .wrap {
+		width: 100%; /* 너비 100% */
+	}
+
+	/* 콘텐츠 영역① */
+	#section01 {
+		height: 100vh; /* 높이 100vh = 디바이스 높이 100% */
+		background: url("../images/section01/mob.jpg") no-repeat; /* 배경 지정*/
+		background-size: cover; /* 배경 크기 지정 */
+	}
+
+	#section01 .text_container {
+		left: 25px; /* 좌측 좌표값 */
+	}
+
+	#section01 .text_container .title > img {
+		width: 80%; /* 너비 80% */
+	}
+
+	/* 콘텐츠 영역② */
+	#section02 .wrap {
+		padding: 0 25px; /* 안쪽 상하 여백 25px */
+	}
+
+	#section02 .img_container > div {
+		width: 80%; /* 너비 80% */
+	}
+	
+	/* 콘텐츠 영역③ */
+	#section03 {
+		display: block; /* flex를 블록 요소로 재정의 */
+		margin-bottom: 115px; /* 바깥 아래 여백 115px */
+	}
+
+	#section03 > div {
+		width: 100%; /* 너비 100% */
+	}
+
+	#section03 .left {
+		margin-bottom: 40px; /* 바깥 아래 여백 40px */
+	}
+
+	#section03 .right .text_container {
+		position: relative; /* 자기자신을 기준점 */
+		left: 25px; /* 좌측 좌표값 */
+		top: 0; /* 상단 좌표값 */
+		transform: translateY(0); /* transform: translateY; */
+	}
+
+	 /* 콘텐츠 영역④ */
+	#section04 .title {
+		padding-left: 25px; /* 안쪽 좌측 여백 25px */
+	}
+
+	#section04 .img_container > div {
+		margin-bottom: 20px; /* 바깥 하단 여백 20px */
+	}
+
+	/* #section04 .img_container > div 자식 중 마지막 자식 선택 */
+	#section04 .img_container > div:last-child {
+		margin-bottom: 40px; /* 바깥 하단 여백 40px */
+	}
+	
+	/* 콘텐츠 영역⑤ */
+	#section05 {
+		padding: 40px 0; /* 안쪽 좌우 여백 40px */
+		display: block; /* flex를 블록 요소로 재정의 */
+	}
+
+	#section05 > div {
+		width: 100%; /* 너비 100% */
+	}
+
+	#section05 .left {
+		margin-bottom: 40px; /* 바깥 하단 여백 40px */
+	}
+
+	#section05 .right .text_container {
+		position: relative; /* 자기자신을 기준점 */
+		left: 25px; /* 좌측 좌표값 */
+		top: 0; /* 상단 좌표값 */
+		transform: translateY(0); /* transform: translateY; */
+	}
+
+}

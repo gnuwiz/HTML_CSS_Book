@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css"> <!-- 초기화css -->
+	<title>Title</title>
+	<style>
+		/* 클래스명: wrap */
+		.wrap {
+			position: relative; /* 자기 자신 기준 */
+			width: 800px; /* 너비: 800px */
+			height: 800px; /* 높이: 800px */
+			border: 1px solid #ddd; /* 선: 1px #ddd 실선 */
+		}
+
+		/* ➀,➁,➂,➃,➄ 공통된 스타일이므로 태그 선택자로 정의 */
+		/* .wrap 기준으로 배치하므로 position: absolute; */
+		section { 
+			position: absolute; /* 부모 기준(.wrap) */
+			width: 150px;
+			height: 150px;
+			background: orange;
+		}
+		
+		/* 클래스명: position01 */
+		.position01 {
+			top: 0;
+			left: 0;
+		}
+
+		/* 클래스명: position02 */
+		.position02 {
+			top: 0;
+			right: 0;
+		}
+
+		/* 클래스명: position03 */	 
+		.position03 {
+			bottom: 0;
+			left: 0;
+		}
+
+		/* 클래스명: position04 */
+		.position04 {
+			bottom: 0;
+			right: 0;
+		}
+		
+		/* 클래스명: position05 */
+		.position05 {
+			top: 150px;
+			left: 150px;
+		}
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<section class="position01"></section>
+		<section class="position02"></section>
+		<section class="position03"></section>
+		<section class="position04"></section>
+		<section class="position05"></section>
+	</main>
+</body>
+</html>

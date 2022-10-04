@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		/* h3요소의 형제 요소 중 p 요소를 모두 선택합니다. */
+		h3 ~ p { background-color: green; }
+		/* h4요소의 형제 요소 중 바로 뒤에 위치하는 p 요소를 선택합니다. */
+		h4 + p { color: blue; }
+	</style>
+</head>
+<body>
+	<h3>한국</h3>
+	<p>서울</p>
+	<p>부산</p>
+
+	<h3>미국</h3>
+	<div>
+		<p>뉴욕</p>
+		<p>로스엔젤레스</p>
+	</div>
+	<h4>일본</h4>
+	<p>도쿄</p>
+	<p>오사카</p>
+</body>
+</html>

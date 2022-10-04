@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css"> <!-- 초기화css -->
+	<title>Title</title>
+	<style>
+		/* 클래스명: header */
+		.header {
+			width: 100%; /* 너비: 100% */
+			height: 100px; /* 높이: 100px */
+			background: red; /* 배경색: red */
+			position: fixed; /* positon: 고정 */
+			top: 0;
+			z-index: 10; /* 요소의 순서를 제어하는 속성 */
+		}
+
+		/* 클래스명: wrap */
+		.wrap {
+			width: 100%; /* 너비: 100% */
+			height: 1000px; /* 높이: 1000px */
+			background: green; /* 배경색: green */
+			margin-top: 100px; /* 상단바깥여백: ➀ 높이값=100px */
+			position: relative;  /* 자기 자신 기준 */
+		}
+
+		/* 클래스명: left */
+		.left {
+			width: 50%; /* 너비: 50% */
+			height: 100%; /* 높이: 100% */
+			background: orange; /* 배경색: orange */
+			position: absolute; /* 부모 기준(.wrap) */
+			left: 0;
+			top: 0;
+		}
+
+		/* 클래스명: right */
+		.right {
+			width: 50%; /* 너비: 50% */
+			height: 100%; /* 높이: 100% */
+			background: blue; /* 배경색: blue */
+			position: absolute; /* 부모 기준(.wrap) */
+			right: 0;
+			top: 0;
+		}
+
+		/* 클래스명: footer */
+		.footer {
+			width: 100%; /* 너비: 100% */
+			height: 100px; /* 높이: 100px */
+			background: red; /* 배경색: red */
+		}
+	</style>
+</head>
+<body>
+	<header class="header"></header>
+	<main class="wrap">
+		<section class="left"></section>
+		<section class="right"></section>
+	</main>
+	<footer class="footer"></footer>
+</body>
+</html>
