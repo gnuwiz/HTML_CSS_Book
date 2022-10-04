@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>CSS</title>
+	<style>
+		.linear {
+			width: 100%;
+			height: 200px;
+			background: red; /* 그라데이션을 지원하지 않는 브라우저용 */
+			background: linear-gradient(-90deg, red, yellow); /* 표준 */
+			background: -webkit-linear-gradient(-90deg, red, yellow); /* Safari */
+			background: -o-linear-gradient(-90deg, red, yellow); /* Opera */
+			background: -moz-linear-gradient(-90deg, red, yellow); /* Firefox */
+		}
+	</style>
+</head>
+<body>
+	<div class="linear">-90deg, red, yellow </div>
+</body>
+</html>
